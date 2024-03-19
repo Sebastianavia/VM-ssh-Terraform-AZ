@@ -80,6 +80,7 @@ Additionally, the script provisions the Azure virtual machine itself with the fo
 
 
 <h2 align="center">Resources</h1>
+
 * [Terraform - virtual machine.](http://https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine#ssh_keys "Terraform - virtual machine.")
 
 
