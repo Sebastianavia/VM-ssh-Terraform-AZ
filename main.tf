@@ -10,7 +10,7 @@ resource "azurerm_resource_group" "rg" {
 resource "azurerm_virtual_network" "vn" {
   name                = var.name_vm
   address_space       = ["10.0.0.0/16"]
-  location            = azurerm_resource_group.rg.locations
+  location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
 }
 
@@ -92,9 +92,9 @@ resource "azurerm_virtual_machine" "vm" {
     managed_disk_type = "Standard_LRS"
   }
   os_profile {
-    computer_name  = "computer1"
-    admin_username = "admin"
-    admin_password = "admin"
+    computer_name  = "hostname"
+    admin_username = "testadmin"
+    admin_password = "Password1234!"
   }
   os_profile_linux_config {
     disable_password_authentication = false
