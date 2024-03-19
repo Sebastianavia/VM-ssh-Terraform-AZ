@@ -53,7 +53,7 @@ Additionally, the script provisions the Azure virtual machine itself with the fo
 ------------
 
 
-####Finally, we proceed to create it with the Terraform commands.
+#### Finally, we proceed to create it with the Terraform commands.
 1. **terraform init**: Initializes the Terraform environment.
 
 2. **terraform validate**: Validates the syntax and configuration of Terraform files.
